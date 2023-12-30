@@ -10,6 +10,6 @@ app.use(express.json());
 */
 app.get('/api/get-env', (req, res) => {
    //Write your code here
+   res.status(200).json({ number: process.env.NUMBER });
 });
-
 module.exports = app;
